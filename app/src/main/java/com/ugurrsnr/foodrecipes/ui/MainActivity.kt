@@ -1,7 +1,8 @@
-package com.ugurrsnr.foodrecipes
+package com.ugurrsnr.foodrecipes.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ugurrsnr.foodrecipes.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
