@@ -1,6 +1,7 @@
 package com.ugurrsnr.foodrecipes.service
 
-import com.ugurrsnr.foodrecipes.adapter.CategoryList
+import com.ugurrsnr.foodrecipes.model.CategoryList
+import com.ugurrsnr.foodrecipes.model.FoodsByCategoryList
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -16,5 +17,9 @@ class FoodApiService {
 
     fun getCategories() : Call<CategoryList> {
         return api.getCategories()
+    }
+
+    fun getFoodsByCategory(category : String) : Call<FoodsByCategoryList> {
+        return api.getMealsByCategory(category)
     }
 }

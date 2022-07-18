@@ -1,4 +1,4 @@
-package com.ugurrsnr.foodrecipes.adapter
+package com.ugurrsnr.foodrecipes.model
 
 data class Category(
     val idCategory: String,
