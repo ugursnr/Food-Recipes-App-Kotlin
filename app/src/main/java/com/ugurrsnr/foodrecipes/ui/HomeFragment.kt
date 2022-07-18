@@ -66,5 +66,6 @@ class HomeFragment : Fragment() {
         }
     }
 
+    //Meal recipes fragment will be added
 
 }
