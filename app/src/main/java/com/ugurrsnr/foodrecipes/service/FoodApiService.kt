@@ -1,5 +1,6 @@
 package com.ugurrsnr.foodrecipes.service
 
+import com.ugurrsnr.foodorderapptutorial.model.FoodList
 import com.ugurrsnr.foodrecipes.model.CategoryList
 import com.ugurrsnr.foodrecipes.model.FoodsByCategoryList
 import retrofit2.Call
@@ -22,4 +23,9 @@ class FoodApiService {
     fun getFoodsByCategory(category : String) : Call<FoodsByCategoryList> {
         return api.getMealsByCategory(category)
     }
+
+    fun getFoodDataByID(id : String): Call<FoodList> {
+        return api.getFoodDetails(id)
+    }
+
 }
